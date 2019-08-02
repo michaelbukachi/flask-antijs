@@ -14,14 +14,13 @@ notifications:
   email: false
   webhooks: https://www.travisbuddy.com/
   on_success: never
-#deploy:
-#  #  if: tag !~ /.*dev$/
-#  provider: pypi
-#  skip_existing: true
-#  user: michaelbukachi
-#  password:
-#    secure:
-#  on:
-#    tags: true
-#    distributions: sdist bdist_wheel
-#    repo: michaelbukachi/flask-antijs
+deploy:
+  provider: pypi
+  skip_existing: true
+  user: michaelbukachi
+  password:
+    secure: Md152blmRuoMFaetTgrw93pq9YAwMC39SHotR0gn2u85KG+mlTZ/fBnSe/B89QQ3062I24Uah0vQJiwOSa0wNbqhtgt9EJvgg7rPypBhazdkO/jQ9hhVRkkm5Voc4HbwIE6F277+GTqctPr7C/XIC/TC81O5+hY/Xm8h/ffNH8+GcNk5QlfApAT2q11bsckQ/LzFJ31KCWhg4bJqQAKT7M5krNqAGYm40lRXADCSyigNO7iyA6XNKSymAdwG1Dgf1jGODtlc5DTDH9qzsknE/OsvyFaEMTy/CvgKVSVWGXkcqApJtsOclzYcb1tyf/2iTQ/6t/F8khPImTS/2MIfhxvFwtYxosKqjszyuW6ArowiDIwtB+1gKQdP0E+cHWDR+dlOJc1cpi1XT5tbaRvFXQcy661anPraPPysn05vY8roZOlvDpcB2g3UqDQQiPsZ1+IGrCvYd0QlKeQ8dWhV26byiUJaX52TrjNmVDub9Ct9Fu3zAC1xxgnbt6h0DlKZlO8IxL3+2hhNYFf7JFvUxh0Zeww3AmAN4q61Cflyefhkhap7OkRDaHLKdQzfCPkMl2Ggg/NLTd+NztYooc73e7XrgQkLBwkRJXP+C9RCCZEFyOeQaxcg/pbM6o0WFfvZxL7mZT0FpBVKZKfBVe2t6BUmKD3H0orO4fT0DQABQr8=
+  on:
+    tags: true
+    distributions: sdist bdist_wheel
+    repo: michaelbukachi/flask-antijs
