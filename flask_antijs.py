@@ -6,7 +6,7 @@ from werkzeug.exceptions import BadRequest
 
 class AntiJs(object):
 
-    def __init__(self, app=None, path_variables_only=True, ignore_payload=False, ignore_query_params=False):
+    def __init__(self, app=None, path_variables_only=False, ignore_payload=False, ignore_query_params=False):
         self.app = app
         if app is not None:
             self.init_app(app, path_variables_only, ignore_payload, ignore_query_params)
