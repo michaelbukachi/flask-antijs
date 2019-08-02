@@ -17,7 +17,7 @@ setup(
     license='BSD',
     author='Michael Bukachi',
     author_email='michaelbukachi@gmail.com',
-    description='An extension to check \'undefined\' values',
+    description='An extension to check \'undefined\' JS values',
     long_description=__doc__,
     py_modules=['flask_antijs'],
     zip_safe=False,
@@ -26,8 +26,8 @@ setup(
     install_requires=[
         'Flask'
     ],
-    setup_requires=['pytest-runner'],
-    test_requires=['pytest', 'pytest-cov'],
+    setup_requires=['pytest-runner', 'wheel', 'twine'],
+    tests_require=['pytest', 'pytest-cov'],
     keywords='flask antijs',
     classifiers=[
         'Environment :: Web Environment',
