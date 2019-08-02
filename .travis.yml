@@ -1,0 +1,27 @@
+language: python
+python:
+  - '2.7'
+  - '3.4'
+  - '3.5'
+  - '3.6'
+sudo: false
+script:
+  - python setup.py test
+after_success:
+  - pip install coveralls
+  - coveralls
+notifications:
+  email: false
+  webhooks: https://www.travisbuddy.com/
+  on_success: never
+#deploy:
+#  #  if: tag !~ /.*dev$/
+#  provider: pypi
+#  skip_existing: true
+#  user: michaelbukachi
+#  password:
+#    secure:
+#  on:
+#    tags: true
+#    distributions: sdist bdist_wheel
+#    repo: michaelbukachi/flask-antijs

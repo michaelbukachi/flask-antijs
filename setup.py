@@ -20,12 +20,8 @@ setup(
     description='An extension to check \'undefined\' JS values',
     long_description=__doc__,
     py_modules=['flask_antijs'],
-    zip_safe=False,
-    include_package_data=True,
     platforms='any',
-    install_requires=[
-        'Flask'
-    ],
+    install_requires=['Flask'],
     setup_requires=['pytest-runner', 'wheel', 'twine'],
     tests_require=['pytest', 'pytest-cov'],
     keywords='flask antijs',
