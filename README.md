@@ -1,4 +1,5 @@
 # Flask-AntiJs
+[![PyPI](https://img.shields.io/pypi/v/Flask-AntiJs.svg)](https://pypi.python.org/pypi/Flask-AntiJs)
 [![Build Status](https://travis-ci.com/michaelbukachi/flask-antijs.svg?branch=master)](https://travis-ci.com/michaelbukachi/flask-antijs)
 
 Flask-AntiJs is a Flask extension the protects endpoints against
