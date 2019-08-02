@@ -1,9 +1,10 @@
 """
-Flask-SQLite3
+Flask-AntiJs
 -------------
 
-This is a flask extension the protects endpoints againts
-'undefined' javascript values by checking the URL, query params and payloads.
+Flask-AntiJs is a Flask extension the protects endpoints against
+'undefined' javascript values by checking the URL, query params and payloads
+and return a 400 (Bad request) response.
 """
 from setuptools import setup
 
