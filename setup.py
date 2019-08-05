@@ -8,7 +8,7 @@ and return a 400 (Bad request) response.
 """
 from setuptools import setup
 
-version="0.0.1"
+version = "0.0.2"
 
 setup(
     name='Flask-AntiJs',

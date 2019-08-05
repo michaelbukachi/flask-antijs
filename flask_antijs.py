@@ -15,9 +15,10 @@ class AntiJs(object):
         @app.before_request
         def check_for_undefined():
             if path_variables_only:  # Only check path variables
-                for variable in request.view_args.values():
-                    if variable == 'undefined':
-                        raise BadRequest('\'undefined\' value found.')
+                if request.view_args:
+                    for variable in request.view_args.values():
+                        if variable == 'undefined':
+                            raise BadRequest('\'undefined\' value found.')
             else:
                 url = request.base_url if ignore_query_params else request.url
                 if 'undefined' in url:  # Check entire url
